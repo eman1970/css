@@ -6,7 +6,11 @@
   box-sizing: border-box;
 }
 
- 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /* For mobile phones: */
 [class*="col-"] {
